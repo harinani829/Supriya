@@ -1,0 +1,10 @@
+services:
+  app:
+    image: yourdockerhub/app:latest
+    ports:
+      - "1111:8080"
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
